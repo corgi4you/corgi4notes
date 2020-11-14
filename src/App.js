@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import NotesList from "./components/NotesList"
-import SubmitForm from './components/SubmitForm';
+import NotesList from "./components/NotesList/index"
+import SubmitForm from './components/SubmitForm/index';
+import "./assets/App.css"
+import "./assets/index.css"
 
 class App extends Component {
   render() {
     return ( 
-      <section>
+      <section className="content">
         <SubmitForm />
         <NotesList />
       </section>
