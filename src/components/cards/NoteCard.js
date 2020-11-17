@@ -8,6 +8,8 @@ const NoteCard = (props) => {
                 <h3 className="note-card_title">{props.title}</h3>
             </header>
             <p className="note-card_text">{props.text}</p>
+            <button className="btn">Delete note</button>
+            <button className="btn">Edit note</button>
         </section>
     )
 }

@@ -5,21 +5,19 @@ import "./assets/App.css"
 import "./assets/index.css"
 
 const App = () => {
-  const [notes, setNotes] = useState([{id: null, title: "", text: ""}]);
-  const initialFormState = {id: null, title: "", text: ""}
+    const initialFormState = {id: null, title: "", text: ""}
+    const [notes, setNotes] = useState([{id: null, title: "", text: ""}]);
 
-  const addNote = (note) => {
-    note.id = notes.length + 1;
-    console.log(notes.length);
-    setNotes([...notes, note]);
-    console.log(notes);
-  }
+    const addNote = (note) => {
+      note.id = notes.length + 1;
+      setNotes([...notes, note]);
+    }
 
   return (
-    <section className="content">
-      <h1>Notes</h1>
+    <section className="container">
+      <h1>My notes</h1>
       <AddNoteForm addNote={addNote}/>
-      <NotesList notes={notes} />
+      <NotesList notes={notes}/>
     </section>
   )
 }

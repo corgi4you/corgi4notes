@@ -27,3 +27,11 @@
     margin-right: 12px;
 }
 
+.btn {
+    align-self: flex-end;
+    background-color: var(--secondary);
+    border-width: 0;
+    color: white;
+    font-weight: 400;
+}
+

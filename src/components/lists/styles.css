@@ -14,3 +14,10 @@
     max-height: 400px;
     display: inline;
   }
+
+  .notes-list_container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30%;
+  }
